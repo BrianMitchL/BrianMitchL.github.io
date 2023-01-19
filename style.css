@@ -1,0 +1,269 @@
+/**
+ * @license
+ *
+ * Font Family: Bebas Neue
+ * Designed by: Ryoichi Tsunekawa, Dharma Type
+ * URL: https://www.fontshare.com./bebas-neue
+ * © 2022 Indian Type Foundry
+ *
+ * Font Style:
+ * Bebas Neue Regular
+ *
+*/
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("./fonts/bebas-neue/BebasNeue-Regular.woff2") format("woff2"),
+  url("./fonts/bebas-neue/BebasNeue-Regular.woff") format("woff"),
+  url("./fonts/bebas-neue/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ *
+*/
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./fonts/satoshi/Satoshi-Variable.woff2") format("woff2"),
+  url("./fonts/satoshi/Satoshi-Variable.woff") format("woff"),
+  url("./fonts/satoshi/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+  font-feature-settings: "dlig", "salt";
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2"),
+  url("./fonts/satoshi/Satoshi-VariableItalic.woff") format("woff"),
+  url("./fonts/satoshi/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+  font-feature-settings: "dlig", "salt";
+}
+
+:root {
+  color-scheme: light dark;
+
+  --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji";
+  --font-heading: "BebasNeue-Regular", var(--font-fallback);
+  --font-body: "Satoshi-Variable", var(--font-fallback);
+
+  /* generated with https://www.fluid-type-scale.com/ */
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(2rem, 2.84vw + 1.29rem, 3.56rem);
+  --font-size-lg: clamp(4rem, 12.16vw + 0.96rem, 10.69rem);
+
+  /* layout */
+  --base-padding: 2rem;
+
+  /* colors */
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+  --orange-200: #fed7aa;
+  --orange-300: #fdba74;
+  --orange-800: #9a3412;
+  --orange-900: #7c2d12;
+  --amber-200: #fde68a;
+  --amber-300: #fcd34d;
+  --amber-800: #92400e;
+  --amber-900: #78350f;
+  --yellow-200: #fef08a;
+  --yellow-300: #fde047;
+  --yellow-800: #854d0e;
+  --yellow-900: #713f12;
+  --lime-200: #d9f99d;
+  --lime-300: #bef264;
+  --lime-800: #3f6212;
+  --lime-900: #365314;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-800: #166534;
+  --green-900: #14532d;
+  --emerald-200: #a7f3d0;
+  --emerald-300: #6ee7b7;
+  --emerald-800: #065f46;
+  --emerald-900: #064e3b;
+  --teal-200: #99f6e4;
+  --teal-300: #5eead4;
+  --teal-800: #115e59;
+  --teal-900: #134e4a;
+  --cyan-200: #a5f3fc;
+  --cyan-300: #67e8f9;
+  --cyan-800: #155e75;
+  --cyan-900: #164e63;
+  --sky-200: #bae6fd;
+  --sky-300: #7dd3fc;
+  --sky-800: #075985;
+  --sky-900: #0c4a6e;
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-800: #1e40af;
+  --blue-900: #1e3a8a;
+  --indigo-200: #c7d2fe;
+  --indigo-300: #a5b4fc;
+  --indigo-800: #3730a3;
+  --indigo-900: #312e81;
+  --violet-200: #ddd6fe;
+  --violet-300: #c4b5fd;
+  --violet-800: #5b21b6;
+  --violet-900: #4c1d95;
+  --purple-200: #e9d5ff;
+  --purple-300: #d8b4fe;
+  --purple-800: #6b21a8;
+  --purple-900: #581c87;
+  --fuchsia-200: #f5d0fe;
+  --fuchsia-300: #f0abfc;
+  --fuchsia-800: #86198f;
+  --fuchsia-900: #701a75;
+  --pink-200: #fbcfe8;
+  --pink-300: #f9a8d4;
+  --pink-800: #9d174d;
+  --pink-900: #831843;
+  --rose-200: #fecdd3;
+  --rose-300: #fda4af;
+  --rose-800: #9f1239;
+  --rose-900: #881337;
+
+  --200: var(--violet-200);
+  --300: var(--violet-300);
+  --800: var(--violet-800);
+  --900: var(--violet-900);
+
+  --text-color: var(--slate-900);
+  --link-color: var(--slate-900);
+  --link-hover-color: var(--slate-800);
+  --background-top: var(--200);
+  --background-bottom: var(--300);
+  --heading-color: var(--800);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: var(--slate-100);
+    --link-color: var(--slate-100);
+    --link-hover-color: var(--slate-200);
+    --background-top: var(--800);
+    --background-bottom: var(--900);
+    --heading-color: var(--200);
+  }
+}
+
+@media (max-width: 36rem) {
+  :root {
+    --base-padding: 1rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--text-color);
+  height: 100%;
+  overflow-wrap: break-word;
+  padding:
+    max(env(safe-area-inset-top, 0), var(--base-padding))
+    max(env(safe-area-inset-right, 0), var(--base-padding))
+    max(env(safe-area-inset-bottom, 0), var(--base-padding))
+    max(env(safe-area-inset-left, 0), var(--base-padding));
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    var(--background-top) 40%,
+    var(--background-bottom) 40%
+  )
+  no-repeat var(--background-bottom);
+  margin-block-start: calc(
+    40dvh - calc(var(--font-size-lg) / 2) -
+    max(env(safe-area-inset-top, 0), var(--base-padding))
+  );
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-heading);
+  line-height: 1;
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: var(--font-size-lg);
+}
+
+@media (prefers-contrast: more) {
+  h1 {
+    color: var(--text-color);
+  }
+}
+
+.subtitle {
+  font-size: var(--font-size-md);
+  margin-block-end: var(--font-size-base);
+}
+
+.description {
+  max-width: 40ch;
+  margin-inline: auto;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}

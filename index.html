@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
-    <p>Head on over to <a href="https://brianm.me/projects/">https://brianm.me/projects/</a> to see a list of projects.</p>
-  </body>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <title>Projects | Brian Mitchell</title>
+  <meta name="author" content="Brian Mitchell" />
+  <meta name="description" content="Projects landing page" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <h1>Projects</h1>
+  <p class="subtitle">Brian Mitchell</p>
+  <p class="description">
+    This is a domain landing page, head on over to
+    <a href="https://brianm.me/projects/">https://brianm.me/projects/</a> to
+    see a list of projects.
+  </p>
+  <script>
+    const colors = [
+      "red",
+      "orange",
+      "amber",
+      "yellow",
+      "lime",
+      "green",
+      "emerald",
+      "teal",
+      "cyan",
+      "sky",
+      "blue",
+      "indigo",
+      "violet",
+      "purple",
+      "fuchsia",
+      "pink",
+      "rose",
+    ];
+    function setRandomColor() {
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      document.documentElement.style.setProperty("--200", `var(--${color}-200`);
+      document.documentElement.style.setProperty("--300", `var(--${color}-300`);
+      document.documentElement.style.setProperty("--800", `var(--${color}-800`);
+      document.documentElement.style.setProperty("--900", `var(--${color}-900`);
+    }
+    setRandomColor();
+    document.documentElement.onmouseup = (event) => {
+      if (event.target.nodeName === 'A') return;
+      setRandomColor();
+    }
+  </script>
+</body>
 </html>
