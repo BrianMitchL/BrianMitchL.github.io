@@ -211,7 +211,7 @@ html {
   font-size: var(--font-size-base);
   line-height: 1.5;
   color: var(--text-color);
-  height: 100%;
+  min-height: 100%;
   overflow-wrap: break-word;
   padding:
     max(env(safe-area-inset-top, 0), var(--base-padding))
@@ -224,14 +224,29 @@ body {
   text-align: center;
   background: linear-gradient(
     to bottom,
-    var(--background-top) 40%,
-    var(--background-bottom) 40%
+    var(--background-top) 40vh,
+    var(--background-bottom) 40vh
   )
   no-repeat var(--background-bottom);
   margin-block-start: calc(
-    40dvh - calc(var(--font-size-lg) / 2) -
+    40vh - calc(var(--font-size-lg) / 2) -
     max(env(safe-area-inset-top, 0), var(--base-padding))
   );
+}
+
+@supports (margin-block-start: 40dvh) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      var(--background-top) 40dvh,
+      var(--background-bottom) 40dvh
+    )
+    no-repeat var(--background-bottom);
+    margin-block-start: calc(
+      40dvh - calc(var(--font-size-lg) / 2) -
+      max(env(safe-area-inset-top, 0), var(--base-padding))
+    );
+  }
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
