@@ -1,24 +1,11 @@
-/**
- * @license
- *
- * Font Family: Bebas Neue
- * Designed by: Ryoichi Tsunekawa, Dharma Type
- * URL: https://www.fontshare.com./bebas-neue
- * © 2022 Indian Type Foundry
- *
- * Font Style:
- * Bebas Neue Regular
- *
-*/
-
 @font-face {
-  font-family: "BebasNeue-Regular";
-  src: url("./fonts/bebas-neue/BebasNeue-Regular.woff2") format("woff2"),
-  url("./fonts/bebas-neue/BebasNeue-Regular.woff") format("woff"),
-  url("./fonts/bebas-neue/BebasNeue-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Space Grotesk Variable";
+  src: url("./fonts/space-grotesk/SpaceGrotesk[wght].woff2") format("woff2"),
+  url("./fonts/space-grotesk/SpaceGrotesk[wght].ttf") format("truetype");
+  font-weight: 300 700;
   font-display: swap;
   font-style: normal;
+  font-feature-settings: 'ss01' on;
 }
 
 /**
@@ -85,7 +72,7 @@
   --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji";
-  --font-heading: "BebasNeue-Regular", var(--font-fallback);
+  --font-heading: "Space Grotesk Variable", var(--font-fallback);
   --font-body: "Satoshi-Variable", var(--font-fallback);
 
   /* generated with https://www.fluid-type-scale.com/ */
