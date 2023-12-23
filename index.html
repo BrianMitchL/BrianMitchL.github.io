@@ -41,10 +41,10 @@
     ];
     function setRandomColor() {
       const color = colors[Math.floor(Math.random() * colors.length)];
-      document.documentElement.style.setProperty("--200", `var(--${color}-200`);
-      document.documentElement.style.setProperty("--300", `var(--${color}-300`);
-      document.documentElement.style.setProperty("--800", `var(--${color}-800`);
-      document.documentElement.style.setProperty("--900", `var(--${color}-900`);
+      document.documentElement.style.setProperty("--200", `var(--${color}-200)`);
+      document.documentElement.style.setProperty("--300", `var(--${color}-300)`);
+      document.documentElement.style.setProperty("--800", `var(--${color}-800)`);
+      document.documentElement.style.setProperty("--900", `var(--${color}-900)`);
     }
     setRandomColor();
     document.documentElement.onmouseup = (event) => {
